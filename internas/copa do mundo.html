@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fute do HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/copa.css">
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 1000,
+                auto: true,
+                pager: true,
+                controls: true,
+            });
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <!------------------------------ CABEÇALHO --------------------------------------->
+        <header id="cabecalho">
+            <div class="container">
+                <img src="../imagens/copadmundo/logo.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="../index.html">Origem</a></li>
+                        <li> <a href="../internas/regras.html">Regras</a></li>
+                        <li> <a href="../internas/champions.html">Champions</a></li>
+                        <li> <a href="../internas/brasileirao.html">Brasileirão</a></li>
+                        <li> <a href="../internas/premier.html">Premier League</a></li>
+                        <li> <a href="#">Copa do Mundo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--------------------------------------- FOTOS ----------------------------------------------------->
+        <section id="fotos">
+            <div class="container">
+                <div id="galeria-fotos">
+                    <a href="../imagens/copadmundo/campeao_2018.jpg" title="foto-01"><img
+                            src="../imagens/copadmundo/campeao_2018.jpg"></a>
+                    <a href="../imagens/copadmundo/foto-1.jpg" title="foto-02"><img
+                            src="../imagens/copadmundo/foto-1.jpg"></a>
+                    <a href="../imagens/copadmundo/foto-2.jpg" title="foto-03"><img
+                            src="../imagens/copadmundo/foto-2.jpg"></a>
+                    <a href="../imagens/copadmundo/trofeu.jpg" title="foto-04"><img
+                            src="../imagens/copadmundo/trofeu.jpg"></a>
+                    <a href="../imagens/copadmundo/foto-3.jpg" title="foto-03"><img
+                            src="../imagens/copadmundo/foto-3.jpg"></a>
+                    <a href="../imagens/copadmundo/foto-4.jpg" title="foto-04"><img
+                            src="../imagens/copadmundo/foto-4.jpg"></a>
+
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------- CONTEUDO ----------------------------------------------------->
+        <section id="conteudo">
+            <div class="container">
+                <h1 class="titulo-home">Copa do Mundo FIFA</h1>
+
+                <P>Mundial de Futebol, mais conhecido no Brasil por Copa do Mundo e também conhecida em Portugal como
+                    Campeonato do Mundo de Futebol, Campeonato Mundial de Futebol, Campeonato Mundial FIFA, ou
+                    simplesmente
+                    Mundial,[2][3] é uma competição internacional de futebol que ocorre a cada quatro anos, com exceção
+                    de
+                    1942 e 1946, quando não foi realizada por conta da Segunda Guerra Mundial. Essa competição, que foi
+                    criada em 1928 na França, sob a liderança do presidente Jules Rimet, está aberta a todas as
+                    federações
+                    reconhecidas pela FIFA (Federação Internacional de Futebol Associado, em francês: Fédération
+                    International de Football Association). O antigo nome da taça faz referência a Jules Rimet. A
+                    primeira
+                    edição ocorreu em 1930 no Uruguai, cuja seleção saiu vencedora.</P>
+
+                <P>Com exceção da Copa do Mundo de 1930, o torneio sempre foi realizado em duas fases. Organizada pelas
+                    confederações continentais, as Eliminatórias da Copa do Mundo permitem que as melhores seleções de
+                    cada
+                    continente participem da competição, que ocorre em um ou mais países-sede. O formato atual da Copa
+                    do
+                    Mundo é com trinta e duas equipes nacionais por um período de cerca de um mês. A partir da edição de
+                    2026 o torneio contará com a participação de 48 equipes.</P>
+
+                <P>Apenas oito países foram campeões mundiais até hoje. O Brasil, a única seleção a ter jogado em todas
+                    as
+                    competições, é o maior campeão com cinco títulos. É também o único proprietário permanente da Taça
+                    Jules
+                    Rimet (posta em jogo em 1930) e ganha em definitivo pelo país que vencesse pela terceira vez o
+                    campeonato, o que se deu na competição em 1970, com Pelé, o único jogador tricampeão mundial da
+                    história. A seleção brasileira é seguida pela Itália e Alemanha, com quatro troféus cada um. A
+                    equipe
+                    que venceu a primeira edição, o Uruguai, conquistou duas vezes, como a Argentina e a França,
+                    bicampeã na
+                    edição 2018.[4] Finalmente, a Inglaterra e a Espanha, ganharam uma Copa do Mundo cada um. O Uruguai
+                    (1930), a Itália (1934), a Inglaterra (1966), a Alemanha (1974), a Argentina (1978) e a França
+                    (1998)
+                    conseguiram vencer ao menos uma edição em casa. Enquanto, os únicos países a ganharem fora de seus
+                    continentes são o Brasil na Europa em 1958 e na Ásia em 2002, a Espanha na África em 2010 e a
+                    Alemanha
+                    na América do Sul em 2014.</P>
+
+                <P>A Copa do Mundo é o evento esportivo mais assistido e prestigiado em todo o mundo, ultrapassando até
+                    mesmo os Jogos Olímpicos. Economicamente, a competição tem efeitos positivos sobre o crescimento de
+                    certos setores e para o desenvolvimento do país que sedia. Instalações desportivas, incluindo os
+                    estádios, são construídos ou reformados para a ocasião. Estradas, aeroportos, hotéis e
+                    infraestrutura de
+                    um modo geral, também são melhorados para receber a competição. Entretanto, um país menos
+                    desenvolvido,
+                    de "Terceiro Mundo", pode sofrer mais que o esperado para organizar um Mundial.</P>
+
+                <P>A Copa do Mundo tem aspectos políticos. Enquanto pode transmitir os valores da paz e universalismo, a
+                    competição pode, ser também, a ocasião de brigas generalizadas e violência em torno das partidas, ou
+                    até
+                    mesmo desencadear uma guerra entre países. Há várias adversidades para se organizar um Mundial. O
+                    evento
+                    também está presente na cultura popular, em vários filmes e documentários, e é uma oportunidade para
+                    criar canções ou hinos. Jogos eletrônicos e álbuns de figurinhas dos futebolistas, por exemplo, são
+                    colocados à venda antes da Copa do Mundo e geram uma excelente oportunidade econômica.</P>
+
+            </div>
+            <!--------------------------------------- VIDEO ----------------------------------------------------->
+        </section>
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">50 Golaços do Brasileirão</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QgdUq8pKYW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------- RODAPE ----------------------------------------------------->
+    <footer id="rodape">
+        <address>
+            <p>Site construído como projeto a disciplina de Introdução à Tecnologia Web do 1º périodo do curso de
+                Sistema de Informação do UniRios - Arthur Vinicus</p>
+            <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        </address>
+
+</body>
+
+</html>

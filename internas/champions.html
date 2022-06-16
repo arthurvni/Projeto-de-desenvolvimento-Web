@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fute do HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/champions.css">
+
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 1000,
+                auto: true,
+                pager: true,
+                controls: true,
+            });
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <!--------------------------------------- CABEÇALHO ----------------------------------------------------->
+        <header id="cabecalho">
+            <div class="container">
+                <img src="../imagens/champíons/logo_champions.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="../index.html">Origem</a></li>
+                        <li> <a href="../internas/regras.html">Regras</a></li>
+                        <li> <a href="#champions">Champions League</a></li>
+                        <li> <a href="../internas/brasileirao.html">Brasileirão</a></li>
+                        <li> <a href="../internas/premier.html">Premier League</a></li>
+                        <li> <a href="../internas/copa do mundo.html">Copa do Mundo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--------------------------------------- BANNERS ----------------------------------------------------->
+        <section id="banners">
+            <div class="container">
+                <ul class=" slider">
+                    <li><img src="../imagens/champíons/banners_champions2019.jpg"></li>
+                    <li><img src="../imagens/champíons/banners_champions2021.jpg"></li>
+                    <li><img src="../imagens/champíons/banners_champions2022.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <!--------------------------------------- CONTEUDO ----------------------------------------------------->
+        <section id="conteudo">
+            <nav>
+                <h1>Liga dos Campeões da UEFA</h1>
+                <p>A Liga dos Campeões da UEFA (em inglês: UEFA Champions League) é uma competição anual de clubes de
+                    futebol a nível continental, organizada pela União das Associações Europeias de Futebol (UEFA) e
+                    disputada por clubes europeus. É um dos torneios mais prestigiados do mundo e a competição de clubes
+                    mais prestigiada no futebol europeu, disputada pelas equipas mais bem classificadas nos respectivos
+                    campeonato nacionais na época anterior, sendo o número de vagas atribuídos consoante o ranking da
+                    UEFA. A final da Liga dos Campeões da UEFA é o evento esportivo anual mais visto em todo o mundo. A
+                    final da edição de 2012–13 teve o maior número de audiência até o momento, atraindo 360 milhões de
+                    telespectadores.</p>
+
+                <p>Introduzida em 1992, a competição é a sucessora da Taça dos Clubes Campeões Europeus (português
+                    europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro), que havia sido disputada desde
+                    1955, acrescentando uma fase de grupos à competição, permitindo a participação de várias equipes de
+                    diversos países A edição de 1992–93 foi inicialmente um torneio que havia apenas grupos, aberto
+                    apenas ao clube campeão de cada país. Durante a década de 1990, o formato foi expandido,
+                    incorporando uma fase pré qualificatória para incluir clubes que terminaram vice-campeão dos seus
+                    campeonatos nacionais. Embora a maioria dos campeonatos nacionais da Europa apenas o campeão
+                    nacional possa participar, os campeonatos nacionais mais fortes oferecem quatro vagas para a
+                    competição e fornece até cinco vagas desde a temporada 2015–16. Os clubes que não se qualificam para
+                    a Liga dos Campeões, podem ser elegíveis para a Liga Europa da UEFA.</p>
+
+                <P>No seu formato atual, a Liga dos Campeões começa em meados de julho com três rodadas de qualificação
+                    e uma rodada de play-off. As dez equipes sobreviventes entram na fase de grupos, juntando outras 22
+                    equipes previamente qualificadas. As 32 equipes são colocadas em oito grupos de quatro equipes e
+                    jogam em um sistema ida e volta. As oito equipes que ficarem na primeira colocação em cada grupo e
+                    as oito que ficarem na segunda colocação de cada grupo, avançam para a fase eliminatória que culmina
+                    com a partida final em maio. O vencedor da Liga dos Campeões se qualifica para a Supercopa da UEFA e
+                    para a Copa do Mundo de Clubes da FIFA.</p>
+
+                <P>O Real Madrid é o clube mais bem sucedido da história da competição, tendo ganho o torneio 14 vezes,
+                    incluindo as primeiras cinco temporadas. Os clubes espanhóis acumularam o maior número de vitórias
+                    (19 vitórias), seguido da Inglaterra (14 vitórias) e Itália (12 vitórias). A competição foi
+                    conquistada por 22 clubes diferentes, 12 dos quais ganhou mais de uma vez. A única equipe tricampeã
+                    consecutiva desde que a competição adotou o molde atual (na temporada 1992–93, como UEFA Champions
+                    League) foi o Real Madrid garantindo seu décimo terceiro título ao derrotar o Liverpool por 3–1 na
+                    final de 2017–2018. Assim, eles se tornaram a primeira equipe na história da Liga dos Campeões da
+                    UEFA a defender o seu título com sucesso.</p>
+            </nav>
+        </section>
+        <!--------------------------------------- FOTOS ----------------------------------------------------->
+        <section id="fotos">
+            <div class="container">
+                <div id="galeria-fotos">
+                    <a href="../imagens/champíons/times_champions.jpg" title="Times champions"><img
+                            src="../imagens/champíons/times_champions.jpg"></a>
+                    <a href="../imagens/champíons/bola_champions.jpg" title="Bola Champions"><img
+                            src="../imagens/champíons/bola_champions.jpg"></a>
+                    <a href="../imagens/champíons/trofeu_champions.jpg" title="Trofeu Champions"><img
+                            src="../imagens/champíons/trofeu_champions.jpg"></a>
+                    <a href="../imagens/champíons/foto-4.jpg" title="Champions"><img src="../imagens/champíons/foto-4.jpg"></a>
+                    <a href="../imagens/champíons/foto-01.jpg" title="Logo Champions"><img src="../imagens//champíons/foto-01.jpg"></a>
+                    <a href="../imagens/champíons/foto-02.jpg" title="Ney sem champions"><img src="../imagens/champíons/foto-02.jpg"></a>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------- VIDEO ----------------------------------------------------->
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">Os 10 gols mais bonitos da Champions League</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qum2dS5_TOM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------- RODAPE ----------------------------------------------------->
+    <footer id="rodape">
+        <address>
+            <p>Site construído como projeto a disciplina de Introdução à Tecnologia Web do 1º périodo do curso de
+                Sistema de Informação do UniRios - Arthur Vinicus</p>
+            <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        </address>
+    </footer>
+</body>
+
+</html>

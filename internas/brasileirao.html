@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fute do HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/brasileirao.css">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 1000,
+                auto: true,
+                pager: true,
+                controls: true,
+            });
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <!-------------------------------- CABEÇALHO ---------------------------------------->
+        <header id="cabecalho">
+            <div class="container">
+                <img src="../imagens/brasileirao/logo_brasileirao.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="../index.html">Origem</a></li>
+                        <li> <a href="../internas/regras.html">Regras</a></li>
+                        <li> <a href="../internas/champions.html">Champions League</a></li>
+                        <li> <a href="../internas/brasileirao.html">Brasileirão</a></li>
+                        <li> <a href="../internas/premier.html">Premier League</a></li>
+                        <li> <a href="../internas/copa do mundo.html">Copa do Mundo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--------------------------------------- FOTOS ----------------------------------------------------->
+        <section id="fotos">
+            <div class="container">
+                <div id="galeria-fotos">
+                    <a href="../imagens/brasileirao/campeao_2019.jpg" title="campeão 2019"><img
+                        src="../imagens/brasileirao/campeao_2019.jpg"></a>
+
+                    <a href="../imagens/brasileirao/campeao_2020.jpg" title="campeão 2020"><img
+                        src="../imagens/brasileirao/campeao_2020.jpg"></a>
+
+                    <a href="../imagens/brasileirao/campeao_2021.jpg" title="campeão 2021"><img
+                        src="../imagens/brasileirao/campeao_2021.jpg"></a>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------- CONTEUDO ----------------------------------------------------->
+        <section id="conteudo">
+            <div class="container">
+                <h1 class="titulo-home">Campeonato Brasileiro de Futebol</h1>
+                <P>O Campeonato Brasileiro de Futebol, também conhecido como Campeonato Brasileiro, Brasileirão e Série
+                    A,
+                    é a liga brasileira de futebol profissional entre clubes do Brasil, sendo a principal competição
+                    futebolística no país. É por meio dela que são indicados os representantes brasileiros para a Copa
+                    Libertadores da América (juntamente com o campeão da Copa do Brasil).</P>
+
+                <P>Ao contrário do que ocorrera em outros países da América do Sul, houve muitos desafios para que o
+                    futebol no Brasil tivesse um sistema de disputa em nível federal. Além da grande dimensão geográfica
+                    do país, contribuíram para essa situação a origem e a consolidação do futebol no país a partir dos
+                    grandes centros urbanos, algo que fortaleceu uma organização por federações estaduais; as intensas
+                    rivalidades pelo poder entre dirigentes paulistas e cariocas, os maiores centros futebolísticos do
+                    Brasil; e a própria postura da Confederação Brasileira de Desportos (CBD, precursora da atual
+                    Confederação Brasileira de Futebol), a então entidade responsável pelo futebol nacional e que tinha
+                    mais
+                    interesse em arrecadar com o modelo de um Campeonato Brasileiro entre Seleções Estaduais. Apenas em
+                    1959, como estabelecido em 1955, a CBD cria um torneio nacional, a Taça Brasil. Em 1967, o
+                    Torneio Rio-São Paulo foi expandido para incluir equipes de outros estados, ficando conhecido como
+                    Torneio Roberto Gomes Pedrosa, e passando a ser considerado uma competição nacional. Em 1971, a CBD
+                    iniciou um novo torneio nacional, o Campeonato Nacional de Clubes, torneio este, que foi
+                    considerado,
+                    entre 1976 e 2010, pela entidade máxima do futebol brasileiro como sendo a primeira edição do
+                    Campeonato
+                    Brasileiro. Em seus boletins oficiais entre 1971 e 1975, a CBD colocava as edições do Torneio
+                    Roberto
+                    Gomes Pedrosa/Taça de Prata[nota 1] em igualdade de condições com as edições posteriores do
+                    Campeonato
+                    Brasileiro, apenas mantendo os nomes próprios, excluindo esta informação a partir
+                    do boletim de 1976. O primeiro Campeonato Brasileiro oficialmente com esse nome foi realizado em
+                    1989. Em dezembro de 2010, a CBF unificou a Taça Brasil, disputada de 1959 a 1968, e as edições de
+                    1967 a 1970 do Torneio Roberto Gomes Pedrosa/Taça de Prata ao Campeonato Brasileiro
+                    pós-1971.</P>
+                    
+                </div>
+    
+            </section>
+            <!--------------------------------------- VIDEO ----------------------------------------------------->
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">50 Golaços do Brasileirão</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-8VKc1biRQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>d
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------- RODAPE ----------------------------------------------------->
+    <footer id="rodape">
+        <address>
+            <p>Site construído como projeto a disciplina de Introdução à Tecnologia Web do 1º périodo do curso de
+                Sistema de Informação do UniRios - Arthur Vinicus</p>
+            <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        </address>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/premier.css">
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 1000,
+                auto: true,
+                pager: true,
+                controls: true,
+            });
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <!------------------------------ CABEÇALHO --------------------------------------->
+        <header id="cabecalho">
+            <div class="container">
+                <img src="../imagens/premier/logo.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="../index.html">Origem</a></li>
+                        <li> <a href="../internas/regras.html">Regras</a></li>
+                        <li> <a href="../internas/champions.html">Champions</a></li>
+                        <li> <a href="../internas/brasileirao.html">Brasileirão</a></li>
+                        <li> <a href="#">Premier League</a></li>
+                        <li> <a href="../internas/copa do mundo.html">Copa do Mundo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--------------------------------------- BANNERS ----------------------------------------------------->
+        <section id="banners">
+            <div class="container">
+                <ul class=" slider">
+                    <li><img src="../imagens/premier/liverpool_campeao.jpg"></li>
+                    <li><img src="../imagens/premier/campeao_2021.jpeg"></li>
+                    <li><img src="../imagens/premier/campeao_city.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <!-------------------------------------- CONTEUDO -------------------------------------------------->
+        <section id="conteudo">
+            <div class="container">
+                <h1 class="titulo-home">Premier League</h1>
+                <p>Premier League (em português: Primeira Liga) é uma liga profissional de futebol do Reino Unido e está no
+                topo do sistema de ligas do futebol inglês, sendo a principal competição de futebol da nação insular.</p>
+
+                <p>É disputada por vinte clubes no sistema de pontos corridos, em que no final de cada temporada os quatro
+                melhores colocados participam da Liga dos Campeões da UEFA, e os três piores são rebaixados para a EFL
+                Championship, dando lugar aos três melhores desta competição. Cada temporada decorre entre agosto e
+                maio, tendo 38 rodadas com dez partidas cada, totalizando 380 partidas em toda a temporada. A maioria
+                dos jogos são disputados durante o período da tarde nos sábados e domingos e algumas vezes durante a
+                noite no meio da semana.</p>
+
+                <p>A competição foi formada como FA Premier League em 20 de fevereiro de 1992, após a decisão dos clubes da
+                Football League First Division de romperem com a Football League, originalmente fundada em 1888, para
+                aumentarem suas receitas provenientes de direitos de televisão, que atualmente rendem £2,4 bilhões por
+                ano para transmissões domésticas (BSkyB e BT Group) e internacionais. A Premier League é a liga de
+                futebol mais popular do mundo, transmitida por oitenta redes de televisão em mais de duzentos países.</p>
+
+               <p>Na temporada 2017–18 a média de público da competição foi de 38 297, sendo a segunda mais alta em ligas
+                de futebol profissional, atrás apenas da Bundesliga. A Premier League está em segundo lugar nos
+                coeficientes de ligas da UEFA, baseados nos desempenhos em competições europeias ao longo dos últimos
+                cinco anos.</p>
+
+               <p>Desde 1888, 24 clubes foram coroados campeões do sistema de futebol inglês. Desde a criação da liga, em
+                1992, um total de 49 clubes já estiveram na Premier League, dos quais sete venceram o título: o
+                Manchester United, o maior campeão com treze títulos, o Chelsea vem em segundo com cinco, o Manchester
+                City com quatro, o Arsenal com três e único clube a conquistar a Premier League de forma invicta,
+                Blackburn Rovers, Liverpool e Leicester, com uma conquista cada. Apenas seis clubes disputaram todas as
+                suas edições: Arsenal, Chelsea, Everton, Liverpool, Manchester United e Tottenham, sendo eles três
+                clubes da cidade de Londres, dois de Liverpool e um de Manchester.</p>
+
+            </div>
+        </section>
+        <!--------------------------------------- FOTOS ----------------------------------------------------->
+        <section id="fotos">
+            <div class="container">
+                <div id="galeria-fotos">
+                    <a href="../imagens/premier/foto-3.jpg" title="foto-01"><img
+                        src="../imagens/premier/foto-3.jpg"></a>
+                    <a href="../imagens/premier/foto-4.jpg" title="foto-02"><img
+                        src="../imagens/premier/foto-4.jpg"></a>
+                    <a href="../imagens/premier/campo.jpg" title="foto-03"><img
+                        src="../imagens/premier/campo.jpg"></a>
+                    <a href="../imagens/premier/times-2.jpg" title="foto-04"><img
+                        src="../imagens/premier/times-2.jpg"></a>
+                    <a href="../imagens/premier/times-01.png" title="foto-05"><img
+                        src="../imagens/premier/times-01.png"></a>
+                    <a href="../imagens/premier/foto-1.jpg" title="foto-06"><img
+                        src="../imagens/premier/foto-1.jpg"></a>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------- VIDEO ----------------------------------------------------->
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">CRISTIANO RONALDO DESTRÓI, ANOTA HAT-TRICK, E MANCHESTER UNITED VENCE O NORWICH NA PREMIER LEAGUE</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L-1fDnkIcq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------- RODAPE ----------------------------------------------------->
+    <footer id="rodape">
+        <address>
+            <p>Site construído como projeto a disciplina de Introdução à Tecnologia Web do 1º périodo do curso de
+                Sistema de Informação do UniRios - Arthur Vinicus</p>
+            <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        </address>
+    </footer>
+
+</body>
+
+</html>

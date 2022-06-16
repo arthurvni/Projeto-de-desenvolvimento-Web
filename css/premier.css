@@ -1,0 +1,172 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #000;
+    --color-2: #fff;
+}
+body{
+    background-image: url(../imagens/premier/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*============================ CABECALHO =============================== */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+#cabecalho{
+    background: linear-gradient(to right,#ffffff , #39015e);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cabecalho #logo{
+    width: 65px;
+    position: relative;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    display: block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: var(--color-2);
+    transition: all 0.3s linear;
+    
+}
+
+#cabecalho nav li a:hover{
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+/*---------------------------BANNERS----------------------------- */
+#banners .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+/*============================ CONTEUDO =============================== */
+
+.titulo-home{
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+}
+
+
+#conteudo {
+    padding: 0 50px;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.999);
+    width: 1000px;
+    height: 1000px;
+    margin: 30px auto;
+    color: var(--color-1);
+    border-radius: 40px;
+}
+
+#conteudo p{
+    text-align: justify;
+    font-size: 20px;
+    color: #39015e;
+    margin-bottom: 35px;
+    line-height: 26px;
+}
+#conteudo h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-bottom: 20px;
+    color: #39015e;
+}
+/*------------------------GALERIA DE FOTOS--------------------------- */
+
+#fotos{
+    padding: 50px 0;
+}
+
+#fotos #galeria-fotos{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 30px;
+    padding-top: 100px;
+    margin: 50px;
+}
+
+#fotos #galeria-fotos img{
+    display: block;
+    width: 100%;
+    transition: all 0.4s linear;
+    height: 100%;
+
+}
+
+#fotos #galeria-fotos img:hover{
+    transform: scale(1.2);
+}
+
+/*=============================VIDEO================================ */
+#video{
+    background-color: var(--color-1);
+    padding: 50px 0;
+}
+
+#video iframe{
+    max-width: 900px;
+    height: 500px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    display: block;
+}
+
+#video .titulo-secao{
+    color: var(--color-2);
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*============================ RODAPE=============================== */
+#rodape {
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--color-1);
+}
+#rodape p{
+    color: var(--color-2);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#rodape a{
+    color: var(--color-2);
+    text-decoration: none;
+
+}
+#rodape a:hover{
+    text-decoration: underline;
+}

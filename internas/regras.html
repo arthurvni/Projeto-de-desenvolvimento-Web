@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fute do HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/regras.css">
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 1000,
+                auto: true,
+                pager: true,
+                controls: true,
+            });
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <!--------------------------------------- CABEÇALHO ----------------------------------------------------->
+        <header id="cabecalho">
+            <div class="container">
+                <img src="../imagens/principal/logo_bola_branca.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="../index.html">Origem</a></li>
+                        <li> <a href="#regras">Regras</a></li>
+                        <li> <a href="../internas/champions.html">Champions League</a></li>
+                        <li> <a href="../internas/brasileirao.html">Brasileirão</a></li>
+                        <li> <a href="../internas/premier.html">Premier League</a></li>
+                        <li> <a href="../internas/copa do mundo.html">Copa do Mundo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-------------------------------------- CONTEUDO -------------------------------------------------->
+        <section id="conteudo">
+            <div class="container">
+                <h1 class="titulo-secao">Regras do Futebol</h1>
+                <div id="regras">
+                    <P>As primeiras regras do futebol surgiram em 1848, com a publicação do Código Unificado na
+                        Inglaterra. Com ela, o esporte foi autorizado para ser praticado no mundo todo, foi definido o
+                        tamanho do campo e a bola passou a ser de couro.</P>
+
+                    <p>Com as novas regras, o desporto começou a ser jogado profissionalmente e em 1857 surge o primeiro
+                        time profissional em Londres.</p>
+
+                    <P>As principais regras do esporte são:</P>
+
+                    <P>• Os jogos são disputados por duas equipes e cada um conta com 11 jogadores;</P>
+
+                    <P>• As partidas duram 90 minutos, divididos em dois tempos de 45 minutos;</P>
+
+                    <P>• É proibido o uso das mãos. Os pés, as pernas, o tronco e a cabeça podem ser utilisados;</P>
+
+                    <P> O árbitro é responsável por supervisionar os jogos;</P>
+
+                    <P>• O Impedimento invalida um gol feito por um jogador quando não tiver dois ou mais jogadores
+                        adversários na linha de fundo;</P>
+
+                    <P>• Se um jogador receber dois cartões amarelos ou um vermelho, então será expulso do jogo;</P>
+
+                    <P>• Será cobrado escanteio quando a bola sair pela linha de fundo e se o último jogador que a
+                        tocá-la estiver na defensiva;</P>
+
+                    <P>• Será cobrado escanteio quando a bola sair pela linha de fundo e se o último jogador a tocá-la
+                        estiver no >ataque. </P>
+
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------- FOTOS ----------------------------------------------------->
+        <section id="fotos">
+            <div class="container">
+                <div id="galeria-fotos">
+                    <a href="../imagens/regras/foto-1.jpg" title="foto-01"><img
+                        src="../imagens/regras/foto-1.jpg"></a>
+                    <a href="../imagens/regras/foto-2.jpg" title="foto-02"><img
+                        src="../imagens/regras/foto-2.jpg"></a>
+                    <a href="../imagens/regras/campo.jpg" title="foto-03"><img
+                        src="../imagens/regras/campo.jpg"></a>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------- VIDEO ----------------------------------------------------->
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">Regras do Futebol</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m83qhVIQHdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+             <!--------------------------------------- RODAPE ----------------------------------------------------->
+    <footer id="rodape">
+        <address>
+            <p>Site construído como projeto a disciplina de Introdução à Tecnologia Web do 1º périodo do curso de
+                Sistema de Informação do UniRios - Arthur Vinicus</p>
+            <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        </address>
+
+    </footer>
